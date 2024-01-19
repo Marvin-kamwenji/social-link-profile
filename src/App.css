@@ -1,0 +1,81 @@
+:root {
+  /* Colors */
+
+  /* Primary */
+  --green: hsl(75, 94%, 57%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  /* Font size */
+  --font-size: 14px;
+
+  --family: [Inter](https://fonts.google.com/specimen/Inter);
+  --normal-weight: 400;
+  --medium-weight: 600;
+  --bold-weight: 700;
+}
+
+body {
+  background-color: var(--off-black);
+}
+
+.App {
+  background-color: var(--dark-grey);
+  border-radius: 14px;
+  margin: 50px 20px;
+}
+
+.profile__picture {
+  border-radius: 50%;
+  background-color: blue;
+  width: 30%;
+  margin-top: 25px;
+  margin-left: 35%;
+}
+
+.profile__title {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: var(--bold-weight);
+  margin-left: 25%;
+}
+
+.profile__subtitle {
+  color: var(--green);
+  font-size: var(--font-size);
+  margin-left: 26%;
+  margin-bottom: 25px;
+}
+
+.profile__description {
+  color: var(--white);
+  font-size: var(--font-size);
+  margin-left: 15%;
+}
+
+.button {
+  color: var(--white);
+  background-color: var(--grey);
+  padding: 10px 0;
+  width: 85%;
+  font-weight: var(--bold-weight);
+  margin-left: 30px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+.button__instagram {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 376px) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+  .App {
+    width: 340px;
+    margin: 50px auto;
+  }
+}
